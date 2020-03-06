@@ -1,40 +1,17 @@
 var currentIP = "";
 var currentMaison = "";
 
-function getCurrentContext()
-{       
-    if (currentIP == currentMaison)
-        return "MAISON";
-    else if (currentIP.includes("184.95.251."))
-        return "LQ";
-    else    
-        return "EXT";    
-}
-
-function redirectOnContext(urlMaison, urlLQ, urlExt)
+function redirectOnContext(urlMaison, urlExt)
 {
     var redirectUrl = "";
-    switch (getCurrentContext()) {
-        case "MAISON":
-            redirectUrl = urlMaison;
-            break;
-        case "LQ" :
-            redirectUrl = urlLQ;
-            break;
-        case "EXT":
-            redirectUrl = urlExt;
-            break;
-    }
-
-    console.log(getCurrentContext());
+    if (currentIP == currentMaison)
+        redirectUrl = urlMaison;
+    else    
+        redirectUrl = urlExt;
+    
     console.log(redirectUrl);
-
-    if (redirectUrl)
-        window.location.replace(redirectUrl);
-    else
-        window.location.replace("404.html");
+    window.location.replace(redirectUrl);
 }
-
 
 $( document ).ready(function() {
     
@@ -44,8 +21,24 @@ $( document ).ready(function() {
     $.getJSON('http://ip-api.com/json/maison.p-o.ca', function(data){
         currentMaison = data.query;          
     });
-
-    $("#test").click(function(){
-        redirectOnContext("https://10.0.0.2:5001/", "", "https://maison.p-o.ca:5001/");        
+    
+    $("#diskstation").click(function(){
+        redirectOnContext("https://10.0.0.2:5001/", "https://maison.p-o.ca:5001/");        
     });    
+
+    $("#photostation").click(function(){
+        redirectOnContext("https://10.0.0.2/photo/", "https://maison.p-o.ca:8081/photo/");        
+    });            
+
+    $("#videostation").click(function(){
+        redirectOnContext("https://10.0.0.2:5001/?launchApp=SYNO.SDS.VideoStation.AppInstance", "https://maison.p-o.ca:5001/?launchApp=SYNO.SDS.VideoStation.AppInstance");        
+    });        
+
+    $("#audiostation").click(function(){
+        redirectOnContext("https://10.0.0.2:5001/?launchApp=SYNO.SDS.AudioStation.Application", "https://maison.p-o.ca:5001/?launchApp=SYNO.SDS.AudioStation.Application");        
+    });      
+    
+    $("#homebridge").click(function(){
+        redirectOnContext("https://maison.p-o.ca:8581", "https://maison.p-o.ca:8581");        
+    });       
 });

@@ -1,30 +1,182 @@
+<!DOCTYPE html>
 <html lang="FR">
-	<head>      
-	<title>Liens</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 		
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="/js/ip.js"></script>
+<head>
+  <title>Portail personnel</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="css/style.css?v=1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="/js/ip.js"></script>
 </head>
-<body>  
-	<div class="container">	
-	
- 					
-		<!-- Vendredi -->
-		<div class="row">
-			<div class="col-md-12">
-                <br />
-                <a href="#" id="test">Test</a>
-			</div>						
-        </div>		
-        
 
-	</div>
+<body>
+  <div class="container">
+    <!-- Entete -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1><i class="fa fa-home"></i> Portail personnel</h1>
+      </div>
+    </div>
+
+    <!-- Debut du 2eme bloc -->
+    <div class="row">
+      <div class="col-md-3 maison">
+        <h2>Synology</h2>
+        <ul>
+          <li><a href="#" id="diskstation">DSM</a></li>
+          <li><a href="#" id="photostation">PhotoStation</a></li>
+          <li><a href="#" id="audiostation">AudioStation</a></li>
+          <li><a href="#" id="videostation">VideoStation</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 maison">
+        <h2>Smart Home</h2>
+        <ul>
+          <li><a href="#" id="homebridge">Homebridge</a></li>
+          <li><a href="https://helixfi.videotron.com">Helix Fi</a></li>
+          <li><a href="https://www.alarm.com/login.aspx">Alarm.com</a></li>
+          <li><a href="https://account.august.com">August</a></li>
+          <li><a href="https://www.mychamberlain.com">Chamberlain MyQ</a></li>
+          <li><a href="https://www.ecobee.com/home">Ecobee</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 maison">
+        <h2>Cloud</h2>
+        <ul>
+          <li><a href="https://aws.amazon.com/">AWS</a></li>
+          <li><a href="https://www.github.com">Github</a></li>
+          <li><a href="https://script.google.com">Google Scripts</a></li>
+          <li><a href="https://voip.ms/login">VoIP.ms</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 maison">
+        <h2>Outils</h2>
+        <ul>
+          <li><a href="https://www.feedly.com/i/my">Feedly</a></li>
+          <li><a href="https://to-do.microsoft.com/tasks/">To Do</a></li>
+          <li><a href="https://codeanywhere.com">CodeAnywhere</a></li>
+          <li><a href="https://getpocket.com/a/queue/">Pocket</a></li>
+          <li><a href="https://pushover.net">Pushover</a></li>
+          <li><a href="https://junecloud.com/sync/deliveries/">Deliveries</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Debut du 1er bloc -->
+    <div class="row">
+      <!-- Environnements SCQ -->
+      <div class="col-md-2 finances">
+        <h2>Finances</h2>
+        <ul>
+          <li><a href="https://authentication.td.com/uap-ui/index.html?consumer=easyweb&locale=en_CA#/login/easyweb-getting-started">TD</a></li>
+          <li><a href="https://www1.royalbank.com/cgi-bin/rbaccess/rbcgi3m01?F6=1&F7=IB&F21=IB&F22=IB&REQUEST=ClientSignin&LANGUAGE=ENGLISH&_ga=2.172678059.98374799.1546874128-830819240.1536243364">RBC</a></li>
+          <li><a href="https://www.tangerine.ca/app/#/accounts">Tangerine</a></li>
+          <li><a href="https://www.koho.ca">Koho</a></li>
+          <li><a href="https://client.bnc.ca/fbngp/login">Financière BN</a></li>
+          <li><a href="https://www.fondsftq.com/fr-ca/mon-compte-en-ligne/connexion.aspx">Fonds FTQ</a></li>
+          <li><a href="https://www.morningstar.ca/ca/portfoliomanager/portfolio.aspx">Morningstar</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 sports">
+        <h2>Sports</h2>
+        <ul>
+          <li><a href="https://www.tsn.ca/">TSN</a></li>
+          <li><a href="http://www.rds.ca">RDS</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 sports">
+        <h2>Hockey</h2>
+        <ul>
+          <li><a href="http://www.hockeydb.com/">HockeyDB</a></li>
+          <li><a href="https://www.capfriendly.com/">Cap Friendly</a></li>
+          <li><a href="https://hockey.fantasysports.yahoo.com/hockey/77041/8">Pool VL</a></li>          
+          <li><a href="https://www.dailyfaceoff.com/starting-goalies//">Gardiens partants</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 sports">
+        <h2>Football</h2>
+        <ul>
+          <li><a href="http://voyagefoot.p-o.ca">Voyage</a></li>
+          <li><a href="https://www.thefantasyfootballers.com">Fantasy Footballers</a></li>
+          <li><a href="https://www.fantasypros.com/nfl/">FantasyPros</a></li>
+          <li><a href="https://fantasyfootballcalculator.com/adp">ADP</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 sports">
+        <h2>Fantasy Football</h2>
+        <ul>
+          <h3>FFFL</h3>
+          <ul class="sublist">
+            <li><a href="https://football.fantasysports.yahoo.com/f1/33555/11">Plateforme</a></li>
+            <li><a href="http://fffl.canadian-forum.com">Forum</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1tvK4Gy9DmDuxIx1jYrNMR0__S0MJqIhg">Fichiers</a></li>
+          </ul>
+          <h3>Fantaisie Football</h3>
+          <ul class="sublist">
+            <li><a href="https://fantasy.nfl.com/league/2312093">Plateforme</a></li>
+            <li><a href="http://fantaisiefootball.p-o.ca/">Site de la ligue</a></li>
+          </ul>
+          <h3>Ligue MS</h3>
+          <ul class="sublist">
+            <li><a href="https://sleeper.app/leagues/454662439066136576">Plateforme</a></li>
+            <li><a href="https://sleeper.app/draft/nfl/454662440097935360">Draft</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Debut du 3eme bloc -->
+    <div class="row autres">
+      <div class="col-md-3">
+        <h2>Multimédia</h2>
+        <ul>
+          <li><a href="https://www.netflix.com/ca/login">Netflix</a></li>
+          <li><a href="https://www.disneyplus.com/login">Disney Plus</a></li>
+          <li><a href="https://www.primevideo.com/">Amazon Prime Video</a></li>
+          <li><a href="https://helix.videotron.com/">Helix</a></li>
+          <li><a href="https://accounts.spotify.com/en/login/?_locale=en-CA&continue=https:%2F%2Fwww.spotify.com%2Fca-en%2Faccount%2Foverview%2F">Spotify</a></li>
+          <li><a href="https://www.985fm.ca/emissions/puisqu-il-faut-se-lever/resume">FM 98.5</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Medias Sociaux</h2>
+        <ul>
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+          <li><a href="https://twitter.com/POTrudeau">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/uas/login">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Shopping</h2>
+        <ul>
+          <li><a href="https://www.amazon.ca">Amazon</a></li>
+          <li><a href="https://camelcamelcamel.com/tracker?filtering=false&rf=*">CamelCamelCamel</a></li>
+          <li><a href="http://forums.redflagdeals.com/hot-deals-f9/">RFD</a></li>
+          <li><a href="https://ca.hotels.com/?pos=HCOM_CA&locale=en_CA">Hotels.com</a></li>
+          <li><a href="https://www.saq.com/content/SAQ/fr.html">SAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Informations</h2>
+        <ul>
+          <li><a href="https://www.lapresse.ca/">LaPresse</a></li>
+          <li><a href="https://ici.radio-canada.ca/">Radio-Canada</a></li>
+          <li><a href="http://www.meteomedia.com/meteo/canada/quebec/lachine">Meteomédia</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
