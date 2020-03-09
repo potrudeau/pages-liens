@@ -1,28 +1,22 @@
-var currentIP = "";
-var currentMaison = "";
+var currentIPInfo = "";
+var myPostalCode = "H8T"
 
 function redirectOnContext(linkName, urlMaison, urlExt)
-{
-    var redirectUrl = "";
-    if (currentIP == currentMaison)
+{    
+    if (currentIPInfo.postal == myPostalCode)
         redirectUrl = urlMaison;
     else    
         redirectUrl = urlExt;
     
-    console.log(linkName + ": " + redirectUrl);
+    console.log(linkName + ": " + currentIPInfo.postal);
     window.location.replace(redirectUrl);
 }
 
-$( document ).ready(function() {
+$( document ).ready(function() {    
     
-    $.getJSON('http://ip-api.com/json/', function(data){        
-        currentIP = data.query;        
-        console.log("Current IP : " + currentIP);
-    });    
-    $.getJSON('http://ip-api.com/json/maison.p-o.ca', function(data){
-        currentMaison = data.query;    
-        console.log("Maison IP : " + currentMaison);      
-    });
+    $.get("https://ipinfo.io?token=62465a66620735", function(response) {
+        currentIPInfo = response;                
+      }, "jsonp")
     
     $("#diskstation").click(function(){
         redirectOnContext("diskstation", "https://10.0.0.2:5001/", "https://maison.p-o.ca:5001/");        
